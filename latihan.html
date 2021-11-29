@@ -12,6 +12,24 @@
 	.manajemendata {font-weight: bolder;}
 	.home {color: blue;}
 
+.fieldset{
+	border:1px black #ddd !important;
+	padding: 0 1.4em 1.4em 1.4em;
+	margin: 0 0 1.5em 0;
+	-webkit-box-shadow: 0 0 0 0 #000;
+					box-shadow:0 0 0 0 #000;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+.legend{
+	font-size: 1.2em;
+	font-weight: bold;
+	text-align: left;
+	width: auto;
+	padding: 0 10px;
+	border-bottom: none;
+	margin-bottom: 5px;
+
 </style>
 
 <body>
@@ -35,7 +53,8 @@
 </nav>
 
 <form action="" method="GET">
-<fieldset>
+<fieldset class="fieldset">
+	<legend class="legend">Form Tambah Data</legend>
 
 <div class="mb-2 row">
   <label class="col-form-label col-sm-2" style="font-weight: bolder;">Nama Barang </label>
@@ -60,7 +79,7 @@
 					<input class="form-control" type="text">
 				</div></div>
 
-<div class="mb-1	 row">
+<div class="mb-1 row">
 				<label for="jb" class="col-sm-2 col-form-label" style="font-weight: bolder;">Tanggal Masuk </label>
 				<div class="col-sm-1" >
 
@@ -81,6 +100,7 @@
 					<input class="form-control" type="text" id="" name="">
 				</div></div>
 
+
 <div class="mb-1 row">
 <label class="col-form-label col-sm-2"></label>
 <div class="col-sm-4">
@@ -89,6 +109,7 @@
 <button type="reset" class="btn btn-danger" class="buttonn">Batal</button>
 </div></div>
 
+</fieldset>
 <br>
 <br>
 
@@ -140,16 +161,11 @@
 				<button type="reset" class="btn btn-danger" class="buttonn">Hapus</button>
 
 			</td>
-
+</fieldset>
 		</tr>
 	</tbody>
 </table>
 </div>
-
-
-
-
-</fieldset>
 </form>
 </body>
 </html>
